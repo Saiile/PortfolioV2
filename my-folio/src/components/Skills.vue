@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="min-h-screen py-12 bg-white">
+  <section id="skills" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-8">
       <h2 class="innovarFont text-4xl md:text-5xl font-bold mb-4 text-black">
         Mes Compétences

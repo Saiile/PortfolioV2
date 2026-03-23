@@ -1,6 +1,6 @@
 <!-- src/components/Formation.vue -->
 <template>
-  <section id="formation" class="min-h-screen py-12 bg-white">
+  <section id="formation" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-8">
       <h2 class="innovarFont text-4xl md:text-5xl font-bold mb-16 text-black">
         Formation

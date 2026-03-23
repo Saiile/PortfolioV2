@@ -12,7 +12,7 @@
           :key="project.id"
           :href="project.github"
           target="_blank"
-          class="relative bg-slate-100 rounded-xl p-4 md:p-8 hover:shadow-2xl transition-all duration-500 hover:scale-90 flex flex-col group"
+          class="relative bg-slate-100 rounded-xl p-4 md:p-8 hover:shadow-xl transition-all duration-300 hover:scale-95 flex flex-col group"
         >
           <div
             class="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-black rounded-full flex items-center justify-center"
@@ -20,7 +20,7 @@
             <img
               :src="flecheIcon"
               alt=""
-              class="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 group-hover:translate-x-1"
+              class="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
             />
           </div>
 
@@ -51,7 +51,7 @@
               <img
                 :src="project.gif"
                 :alt="project.name"
-                class="max-w-full max-h-48 md:max-h-80 object-contain object-top rounded-md"
+                class="max-w-full h-48 md:h-80 object-cover object-top rounded-md border-2 border-solid border-black"
               />
             </div>
           </div>
@@ -64,6 +64,7 @@
 <script setup>
 import stanleyjobGif from "../assets/sj-search.gif";
 import flecheIcon from "../assets/fleche.png";
+import WekaGif from "../assets/WEKA.gif"
 
 const projects = [
   {
@@ -75,6 +76,15 @@ const projects = [
     github: "https://github.com/Saiile/Jobboard",
     gif: stanleyjobGif,
   },
+  {
+    id:1,
+    name:"WEKA",
+    description:
+    "Weka est une application web inspirée de Discord qui permet aux utilisateurs de créer et rejoindre des serveurs, d’organiser les conversations en salons, et de profiter d’une interface flexible avec des onglets multiples et déplaçables.",
+    technologies: ["Nuxt", "Fastify", "PostgreSQL", "Supabase"],
+    github: "https://github.com/Saiile/WEKA",
+    gif: WekaGif,
+  }
 ];
 </script>
 

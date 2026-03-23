@@ -1,6 +1,6 @@
 <!-- src/components/Contact.vue -->
 <template>
-  <section id="contact" class="min-h-screen py-20 bg-white">
+  <section id="contact" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-8">
       <h2 class="innovarFont text-4xl md:text-5xl font-bold mb-16 text-black">
         Contact
