@@ -59,7 +59,7 @@
           </form>
         </div>
 
-          <div class="flex flex-wrap items-center gap-6 text-black">
+          <div class="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-6 text-black">
             
             <!-- Email -->
             <div class="flex items-center gap-3">
@@ -72,7 +72,7 @@
               </div>
             </div>
 
-            <div class="w-px h-10 bg-gray-300"></div>
+            <div class="hidden sm:block w-px h-10 bg-gray-300"></div>
 
             <!-- Github -->
             <div class="flex items-center gap-3">
@@ -88,7 +88,7 @@
               </div>
             </div>
 
-            <div class="w-px h-10 bg-gray-300"></div>
+            <div class="hidden sm:block w-px h-10 bg-gray-300"></div>
 
             <!-- LinkedIn -->
             <div class="flex items-center gap-3">
