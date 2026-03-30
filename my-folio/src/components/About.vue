@@ -7,13 +7,9 @@
 
       <div>
         <p class="Isenheim text-lg md:text-xl leading-relaxed">
-          Je suis un développeur passionné, actuellement en pré-MSc, et en
-          recherche d'une alternance à partir de janvier. Au fil de mes études
-          et projets personnels. J'ai acquis une expertise en développement
-          front-end et back-end, travaillant sur divers projets avec une
-          multitude de technologies. Mon parcours académique et pratique m'a
-          permis de développer des compétences solides et une compréhension
-          approfondie du domaine.
+          Je suis un développeur passionné, actuellement en Pré-MSc et futur étudiant en MSc1 à Epitech Montpellier. Je suis à la recherche d’une alternance à partir de septembre.
+          Au fil de mes études et de mes projets personnels, j’ai acquis de solides compétences en développement front-end et back-end, en travaillant avec diverses technologies sur des projets concrets.
+          Mon parcours académique et pratique m’a permis de développer une bonne maîtrise du développement web ainsi qu’une réelle capacité à concevoir des solutions complètes et efficaces.
         </p>
       </div>
     </div>
