@@ -59,21 +59,52 @@
           </form>
         </div>
 
-        <div class="flex items-center gap-4 text-black">
-          <div
-            class="w-12 h-12 hover:bg-slate-200 transition-all rounded-full flex items-center justify-center"
-          >
-            <img :src="mailIcon" alt="Email" class="w-6 h-6" />
+          <div class="flex flex-wrap items-center gap-6 text-black">
+            
+            <!-- Email -->
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 hover:bg-slate-200 transition-all rounded-full flex items-center justify-center" @click="copyMail">
+                <img :src="mailIcon" alt="Email" class="w-6 h-6" />
+              </div>
+              <div>
+                <p class="Isenheim text-sm text-gray-500">Email</p>
+                <p class="Isenheim hover:text-gray-600 transition-colors" @click="copyMail"> {{ copied ? 'Copié !' : 'elias1.ouissi@epitech.eu' }}</p>
+              </div>
+            </div>
+
+            <div class="w-px h-10 bg-gray-300"></div>
+
+            <!-- Github -->
+            <div class="flex items-center gap-3">
+              <a href="https://github.com/Saiile" target="_blank" rel="noopener noreferrer"
+                class="w-12 h-12 hover:bg-slate-200 transition-all rounded-full flex items-center justify-center">
+                <img src="../assets/github.png" alt="GitHub" class="w-6 h-6" />
+              </a>
+              <div>
+                <p class="Isenheim text-sm text-gray-500">Github</p>
+                <a href="https://github.com/Saiile" target="_blank" class="Isenheim hover:text-gray-600 transition-colors">
+                  github.com/Saiile
+                </a>
+              </div>
+            </div>
+
+            <div class="w-px h-10 bg-gray-300"></div>
+
+            <!-- LinkedIn -->
+            <div class="flex items-center gap-3">
+              <a href="https://www.linkedin.com/in/elias-ouissi/" target="_blank" rel="noopener noreferrer"
+                class="w-12 h-12 hover:bg-slate-200 transition-all rounded-full flex items-center justify-center">
+                <img src="../assets/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+              </a>
+              <div>
+                <p class="Isenheim text-sm text-gray-500">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/elias-ouissi/" target="_blank" class="Isenheim hover:text-gray-600 transition-colors">
+                  linkedin.com/in/elias-ouissi
+                </a>
+              </div>
+            </div>
+
           </div>
-          <div>
-            <p class="Isenheim text-sm text-gray-500">Email</p>
-            <a
-              class="Isenheim hover:text-gray-600 transition-colors cursor-pointer"
-            >
-              elias1.ouissi@epitech.eu
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -85,6 +116,8 @@ import emailjs from "@emailjs/browser";
 import mailIcon from "../assets/mail.png";
 
 const formRef = ref(null);
+const copied = ref(false)
+
 
 const sendEmail = (e) => {
   e.preventDefault();
@@ -108,6 +141,12 @@ const sendEmail = (e) => {
       }
     );
 };
+
+const copyMail = () => {
+  navigator.clipboard.writeText('elias1.ouissi@epitech.eu')
+  copied.value = true
+  setTimeout(() => copied.value = false, 2000)
+}
 </script>
 
 <style scoped>

@@ -28,24 +28,20 @@
       </div>
     </div>
 
-    <div
-      class="absolute top-1/2 right-8 -translate-y-1/2 z-[60] pointer-events-auto flex flex-col gap-6"
-    >
+    <div class="absolute top-1/2 right-8 -translate-y-1/2 z-[60] pointer-events-auto flex flex-col gap-6">
       <a
         href="https://github.com/Saiile"
         target="_blank"
         rel="noopener noreferrer"
-        class="w-12 h-12 rounded-full flex items-center justify-center hover:scale-125 transition-all"
-      >
-        <img src="../assets/github.png" alt="GitHub" class="w-6 h-6" />
+        class="w-12 h-12 rounded-full flex items-center justify-center hover:scale-125 transition-all">
+        <img src="../assets/github.png" alt="GitHub" class="w-10 h-10" />
       </a>
       <a
         href="https://www.linkedin.com/in/elias-ouissi/"
         target="_blank"
         rel="noopener noreferrer"
-        class="w-12 h-12 rounded-full flex items-center justify-center hover:scale-125 transition-all"
-      >
-        <img src="../assets/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+        class="w-12 h-12 rounded-full flex items-center justify-center hover:scale-125 transition-all">
+        <img src="../assets/linkedin.png" alt="LinkedIn" class="w-10 h-10" />
       </a>
     </div>
 

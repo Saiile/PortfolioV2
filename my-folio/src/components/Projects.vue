@@ -12,7 +12,7 @@
           :key="project.id"
           :href="project.github"
           target="_blank"
-          class="relative bg-slate-100 rounded-xl p-4 md:p-8 hover:shadow-xl transition-all duration-300 hover:scale-95 flex flex-col group"
+          class="relative bg-slate-100 rounded-lg p-4 md:p-8 transition-all duration-300 hover:scale-[98%] flex flex-col group border border-black"
         >
           <div
             class="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-black rounded-full flex items-center justify-center"
